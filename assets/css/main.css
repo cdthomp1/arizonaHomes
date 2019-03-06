@@ -3099,7 +3099,7 @@
 
 	#header {
 		background: #333333;
-		background-image: url("../../images/logo.svg");
+		background-image: url("images/logo.svg");
 		background-size: 18em;
 		background-repeat: no-repeat;
 		background-position: 15% 21%;
@@ -3409,7 +3409,7 @@
 		color: #f2a3a5;
 		padding: 13em 0 11em 0;
 		background-color: #132D7B;
-		background-image: url("../../images/arizonaSunset1.jpg"); 
+		background-image: url("images/arizonaSunset1.jpg"); 
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 15% left;
