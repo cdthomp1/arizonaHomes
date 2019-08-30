@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arizona Homes: Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .bg-dark {
+            background-color: #333333 !important;
+        }
+
+        .white {
+            color: white !important;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            margin-right: 35px;
+        }
+
+        .btn-outline-secondary {
+            border-color: white;
+            border-width: 2px; 
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 375px) {
+            #logo {
+                width: 30px;
+                height: 30px;
+            }
+
+            .navbar-brand {
+
+                font-size: 1rem !important;
+                margin-right: 0px;
+            }
+        }
+
+        #banner {
+            background-color: #924169;
+            padding: 13em 0 11em 0;
+            background-color: #132D7B;
+            background-image: url("arizonaSunset1.jpg");
+            background-size: cover;
+            text-align: left;
+            position: relative;
+        }
+
+    
+
+        #banner:after {
+            -moz-transition: opacity 4s ease;
+            -webkit-transition: opacity 4s ease;
+            -ms-transition: opacity 4s ease;
+            transition: opacity 4s ease;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: block;
+            top: 0;
+            left: 0;
+            background-color: #0c0c0c;
+            opacity: 0.25;
+        }
+
+        #banner .inner {
+            max-width: 65em;
+            width: calc(100% - 6em);
+            margin: 0 auto;
+            position: relative;
+            z-index: 10000;
+            line-height: 1.5;
+        }
+
+        @media screen and (max-width: 480px) {
+
+            #banner .inner {
+                max-width: 90%;
+                width: 90%;
+            }
+
+        }
+
+        #banner h1 {
+            font-size: 2em;
+            margin: 0 0 1em 0;
+            padding: 0;
+            letter-spacing: 3px;
+            font-weight: 700;
+        }
+
+        #banner h1 span {
+            font-weight: 400;
+        }
+
+        body.is-loading #banner:after {
+            opacity: 1;
+        }
+
+        @media screen and (max-width: 1680px) {
+
+            #banner {
+                padding: 10em 0 8em 0;
+            }
+
+        }
+
+        @media screen and (max-width: 1280px) {
+
+            #banner {
+                padding: 8em 0 6em 0;
+            }
+
+        }
+
+        @media screen and (max-width: 980px) {
+
+            #banner {
+                padding: 12em 0 10em 0;
+            }
+
+            #banner br {
+                display: none;
+            }
+
+        }
+
+        @media screen and (max-width: 736px) {
+
+            #banner {
+                padding: 4em 0 2em 0;
+            }
+
+            #banner h1 {
+                font-size: 1.75em;
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+
+            #banner {
+                padding: 5em 0 3em 0;
+            }
+
+            #banner ul {
+                margin-top: 1em;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="./new-index.html">
+                <img id="logo" src="./newLogo.jpg" width="40" height="40" class="d-inline-block align-top" alt="">
+                Arizona Homes Rentals and Sales
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link white" href="./new-index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link white" href="new-rentals.html">Rentals</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <section id="banner">
+        <div class="inner">
+            <h1 class="white">Setting the standard in</br> Property Managment</br> in Arizona</h1>
+            <a href="managementServices.html" class="btn btn-outline-secondary white">Get Started</a>
+
+        </div>
+    </section>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+</html>
